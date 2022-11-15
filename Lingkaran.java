@@ -1,10 +1,11 @@
 
 package lingkaran;
 
-public class Lingkaran {
-    int panjang = 12;
-    int lebar = 7;
+public interface Lingkaran {
+    int PANJANG = 12;
+    int LEBAR = 7;
     
     void hitungLuas();
+    void tampilkanLuas();
 }
     
