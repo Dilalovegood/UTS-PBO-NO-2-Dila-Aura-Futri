@@ -2,18 +2,26 @@
 package lingkaran;
 
 
-public class SetengahLingkaran extends Lingkaran{
+public class SetengahLingkaran implements Lingkaran{
     
-    double hasil;
+    double result;
     public SetengahLingkaran(){
-        hasil = 0;
+        result = 0;
     }
+    
     @Override
     public void hitungLuas() {
-        hasil = (panjang * lebar) * (Math.PI * lebar * lebar);
+        double luas1 = (PANJANG / 2 * LEBAR) - (Math.PI * (PANJANG / 2) * (PANJANG / 2) / 4);
+        
+        result = 2 * luas1;
     }
     
-    public double getHasil(){
-        return hasil;
+    @Override
+    public void tampilkanLuas() {
+        System.out.println("luas nya adalah : " + this.getResult());
+    }
+    
+    public double getResult(){
+        return result;
     }
 }
